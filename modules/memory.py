@@ -1,6 +1,6 @@
 class Memory:
-    def __init__(self, SYSTEM_PROMPT=None):
-        self.conversation = [SYSTEM_PROMPT]
+    def __init__(self):
+        self.conversation = []  # List to store conversation messages
     def add_user_message(self, user_input):
         self.conversation.append(
             {
